@@ -1,0 +1,2 @@
+[workspace]
+members = ["max32630_svd"]

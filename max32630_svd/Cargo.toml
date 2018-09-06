@@ -1,0 +1,22 @@
+[package]
+version = "0.1.0"
+authors = [
+    "Wez Furlong <wez@wezfurlong.org>",
+]
+description = "Peripheral access API for max32630 microcontrollers"
+keywords = ["no-std", "arm", "cortex-m", "max32630"]
+license = "MIT OR Apache-2.0"
+name = "max32630_svd"
+repository = "https://github.com/wez/max32630"
+
+[dependencies]
+bare-metal = "0.2.1"
+vcell = "0.1"
+cortex-m = "0.5.3"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.1"
+
+[features]
+rt = ["cortex-m-rt/device"]
