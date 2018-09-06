@@ -8,6 +8,7 @@ keywords = ["no-std", "arm", "cortex-m", "max32630"]
 license = "MIT OR Apache-2.0"
 name = "max32630_svd"
 repository = "https://github.com/wez/max32630"
+readme = "../README.md"
 
 [dependencies]
 bare-metal = "0.2.1"
