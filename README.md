@@ -2,9 +2,19 @@
 
 > Peripheral access API for Maxim Integrated 32630 devices
 
-NOTE: we use `svd2rust` to generate the code, `form` to organize it, and `cargo fmt` to make it pretty
+## `max32630_svd`
 
 # [Documentation](https://docs.rs/max32630_svd)
+
+The SVD file was extracted from the pack provided by Maxim available
+from here: <https://www.keil.com/dd2/pack/>
+
+We use `svd2rust` to generate the code, `form` to organize it, and `cargo fmt` to make it pretty
+
+## Other Resources
+
+* [Product Description](https://www.maximintegrated.com/en/products/microcontrollers/MAX32630FTHR.html)
+* [Datasheet](https://datasheets.maximintegrated.com/en/ds/MAX32630FTHR.pdf)
 
 # License
 
