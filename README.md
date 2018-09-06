@@ -11,10 +11,18 @@ from here: <https://www.keil.com/dd2/pack/>
 
 We use `svd2rust` to generate the code, `form` to organize it, and `cargo fmt` to make it pretty
 
+Issues:
+
+* The example startup code on mbed references a number of registers that are not present in the IOMAN portion of the SVD file.  [ioman_regs.h](https://github.com/ARMmbed/mbed-os/blob/master/targets/TARGET_Maxim/TARGET_MAX32630/device/ioman_regs.h#L616).  The User Guide linked below has technical info that will help to fill in the SVD file appropriately.
+
 ## Other Resources
 
+* [mbed-os target](https://github.com/ARMmbed/mbed-os/tree/master/targets/TARGET_Maxim/TARGET_MAX32630)
+* [startup code](https://github.com/ARMmbed/mbed-os/blob/master/targets/TARGET_Maxim/TARGET_MAX32630/TARGET_MAX32630FTHR/low_level_init.c)
 * [Product Description](https://www.maximintegrated.com/en/products/microcontrollers/MAX32630FTHR.html)
-* [Datasheet](https://datasheets.maximintegrated.com/en/ds/MAX32630FTHR.pdf)
+* [MAX32630 Rev B User Guide](https://pdfserv.maximintegrated.com/en/an/AN6349.pdf)
+* [MAX32630 Datasheet](https://datasheets.maximintegrated.com/en/ds/MAX32630-MAX32631.pdf)
+* [MAX32630FTHR Datasheet](https://datasheets.maximintegrated.com/en/ds/MAX32630FTHR.pdf)
 
 # License
 
